@@ -84,6 +84,30 @@
    ```
    Откройте браузер по адресу [http://localhost:3000](http://localhost:3000).
 
+
+
+### Router
+```jsx
+     <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<BooksPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/book/:bookId" element={<BookPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
+```
+
+### Book Page
+<img width="1301" alt="image" src="https://github.com/user-attachments/assets/3ec1fa0a-d8a9-4ef9-a904-215607381b9b" />
+
+
+### Not Found Page
+<img width="1353" alt="image" src="https://github.com/user-attachments/assets/a3db716d-4864-45cb-857a-e290b0a35bb3" />
+
+
+
 ## Контрольные вопросы
 
 1. **Что такое динамические маршруты в React Router и как их использовать?**  
